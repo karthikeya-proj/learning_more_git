@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body class="auth-bg">
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Login Card -->
+  <div class="auth-card">
+
+    <h1>Welcome Back</h1>
+    <p class="subtitle">Login to your account</p>
+
+    <form>
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com" required />
+
+      <label>Password</label>
+      <div class="password-box">
+        <input
+          id="loginPassword"
+          type="password"
+          placeholder="••••••••"
+          required
+        />
+        <span onclick="togglePassword('loginPassword')">👁</span>
+      </div>
+
+      <button type="submit">Sign In</button>
+    </form>
+
+    <p class="switch">
+      Don’t have an account?
+      <a href="register.html">Register</a>
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
